@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Block.cs" />
+    <Compile Include="Blockchain.cs" />
     <Compile Include="BlockchainApp.cs">
       <SubType>Form</SubType>
     </Compile>

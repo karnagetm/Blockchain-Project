@@ -12,9 +12,12 @@ namespace BlockchainAssignment
 {
     public partial class BlockchainApp : Form
     {
+        Blockchain blockchain;
         public BlockchainApp()
         {
             InitializeComponent();
+            blockchain = new Blockchain();
+            richTextBox1.Text = "New Blockchain Initialised!"; 
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -23,7 +26,13 @@ namespace BlockchainAssignment
 
         private void button1_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text = textBox1.Text;
+            int index = 0;
+            if(Int32.TryParse(textBox1.Text, out index))
+            {
+                richTextBox1.Text = blockchain.GetBlockAsString(index);
+            }
+
+        
         }
     }
 }
