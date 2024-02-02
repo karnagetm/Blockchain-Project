@@ -1,4 +1,4 @@
-# Blockchain Assignment Application
+# Blockchain Personal Assignment Application
 
 This repository contains a simple yet functional implementation of a blockchain system designed for educational purposes. The core classes—`Block`, `Blockchain`, `Transaction`, and `Wallet`—work together to simulate the fundamental operations of a blockchain.
 
