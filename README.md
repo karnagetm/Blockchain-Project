@@ -16,6 +16,8 @@ This repository contains a simple yet functional implementation of a blockchain 
 - **Mining Simulation**: Demonstrates the process of mining new blocks with nonce and difficulty levels.
 - **Transaction Pool**: Manages a pool of pending transactions ready to be included in the next block.
 
+### Upcoming:
+
 ## Practical Use:
 This application provides a hands-on experience with blockchain technology. It's a valuable educational resource for understanding decentralized ledger functionality, cryptographic principles, and the consensus process in blockchain networks.
 
