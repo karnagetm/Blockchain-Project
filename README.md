@@ -1,36 +1,42 @@
 # Blockchain Personal Assignment Application:
 
-This repository contains a simple yet functional implementation of a blockchain system designed for educational purposes. The core classes—`Block`, `Blockchain`, `Transaction`, and `Wallet`—work together to simulate the fundamental operations of a blockchain.
+This repository houses an educational blockchain application that demonstrates the key components and functionalities of a distributed ledger system. The primary classes—`Block`, `Blockchain`, `Transaction`, and `Wallet`—collectively simulate the critical operations of a blockchain.
 
 ## Release Notes:
 
-### v1.4 (New Features)
-- **Multi-Threaded Mining**: Enhanced the mining algorithm to use multiple CPU cores in parallel, significantly reducing block mining time.
-- **Mining Duration Metric**: Included a performance metric that records the duration of the mining process in milliseconds.
+### v1.5/5.3 (New Features)
+- **Double-Spending Prevention**: Implemented checks to prevent double-spending within the transaction pool and upon block confirmation.
+- **Merkle Root Computation**: Integrated the calculation of the Merkle root for efficient transaction verification and enhanced block integrity.
+- **Transaction Validation Rules**: Enforced transaction rules to verify the authenticity and sufficiency of funds before acceptance into the transaction pool.
+- **Network Consensus Enforcement**: Codified the rules for network consensus, including proof-of-work requirements and chain validity.
 
-### v1.3 (Previous Features):
-- **SHA256 Encryption**: Employs SHA256 hashing for securing blocks.
-- **Immutable Ledger**: Tracks the sequence of blocks with an incremental index and timestamps.
-- **Public/Private Key Generation**: Facilitates secure transactions with cryptographic key pairs.
-- **Transaction Verification**: Incorporates signature validation to authenticate transactions.
-- **Mining Simulation**: Demonstrates the process of mining new blocks with nonce and difficulty levels.
-- **Transaction Pool**: Manages a pool of pending transactions ready to be included in the next block.
+### v1.4 (Previous Features)
+- **Multi-Threaded Mining**: Utilizes multiple CPU cores for concurrent mining operations, significantly optimizing block discovery times.
+- **Mining Duration Metric**: Records and reports the time taken to mine blocks, providing insight into mining efficiency.
+
+### v1.3 (Previous Features)
+- **SHA256 Encryption**: Secures block contents with SHA256 hashing.
+- **Immutable Ledger**: Ensures a tamper-evident sequence of blocks using an incremental index and precise timestamps.
+- **Public/Private Key Generation**: Generates cryptographic key pairs for transaction security.
+- **Transaction Verification**: Validates transactions by verifying digital signatures.
+- **Mining Simulation**: Illustrates mining with nonce and difficulty adjustments.
+- **Transaction Pool**: Manages pending transactions awaiting block inclusion.
 
 ### Upcoming:
+- Further enhancements to security measures and network efficiency.
+- Advanced features for smart contract functionality.
 
 ## Practical Use:
-This application provides a hands-on experience with blockchain technology. It's a valuable educational resource for understanding decentralized ledger functionality, cryptographic principles, and the consensus process in blockchain networks.
+This application serves as a practical tool for exploring blockchain mechanics. It is an invaluable educational asset for students and enthusiasts aiming to understand the inner workings of decentralized ledger systems, cryptographic security, and consensus algorithms in blockchain networks.
 
 ## Motivation:
-The project was developed to demystify the technicalities of blockchain operations for students, developers, and blockchain enthusiasts. It strips down complex concepts into manageable code, making it easier to grasp the underlying principles of blockchain technology.
+The intent behind this project is to clarify the complexities of blockchain technology for educational purposes. It breaks down intricate blockchain concepts into digestible code segments, facilitating a deeper comprehension of the technology's foundational aspects.
 
 ## Usage:
-Instantiate the `Block` class to create new blocks:
+To generate new blocks and interact with the blockchain, instantiate the `Block` class and engage with the application's methods:
 ```csharp
-Block genesisBlock = a new Block(0, "0");
-Block nextBlock = new Block(genesisBlock);
-
-
+Block genesisBlock = new Block();
+Block nextBlock = new Block(genesisBlock, transactionList, minerAddress);
 
 
  
