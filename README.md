@@ -4,6 +4,15 @@ This repository houses an educational blockchain application that demonstrates t
 
 ## Release Notes:
 
+### v1.6/5.4 (New Features)
+- **Alternative Mining Preference Settings**: Added the ability for miners to choose their preferred transaction selection strategy when mining a new block. Options include:
+  - **Greedy**: Prioritizes transactions with the highest fees.
+  - **Altruistic**: Selects transactions based on the longest waiting time.
+  - **Random**: Randomly picks transactions from the pool.
+  - **Address Preference**: Prefers transactions involving the miner's own address.
+- **UI Integration**: Updated the user interface to allow miners to easily select their mining preference.
+- **Dynamic Transaction Handling**: Enhanced the system's transaction handling logic to accommodate different mining preferences.
+
 ### v1.5/5.3 (New Features)
 - **Double-Spending Prevention**: Implemented checks to prevent double-spending within the transaction pool and upon block confirmation.
 - **Merkle Root Computation**: Integrated the calculation of the Merkle root for efficient transaction verification and enhanced block integrity.
@@ -36,7 +45,7 @@ The intent behind this project is to clarify the complexities of blockchain tech
 To generate new blocks and interact with the blockchain, instantiate the `Block` class and engage with the application's methods:
 ```csharp
 Block genesisBlock = new Block();
-Block nextBlock = new Block(genesisBlock, transactionList, minerAddress);
+Block nextBlock = new Block(genesisBlock, transactionList, minerAddress, difficulty);
 
 
  
