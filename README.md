@@ -31,7 +31,7 @@ This application serves as a practical tool for exploring blockchain mechanics. 
 The intent behind this project is to clarify the complexities of blockchain technology for educational purposes. It breaks down intricate blockchain concepts into digestible code segments, facilitating a deeper comprehension of the technology's foundational aspects.
 
 ## Usage
-To generate new blocks and interact with the blockchain, instantiate the `Block` class and engage with the application's methods:
+Click generate new wallet to have your keys ready, To generate new blocks and interact with the blockchain, instantiate the `Block` class and engage with the application's methods:
 ```csharp
 Block genesisBlock = new Block();
 Block nextBlock = new Block(genesisBlock, transactionList, minerAddress, difficulty);
