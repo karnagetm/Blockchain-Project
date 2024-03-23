@@ -4,7 +4,7 @@ This repository houses an educational blockchain application that demonstrates t
 
 ## Release Notes
 
-### v1.7/5.5 (Updated New Features)
+### v1.7/5.5 (Updated New Features) (FINAL VERSION)
 - **Block Reward Halving Mechanism**: Implemented a reward halving feature where the mining reward is reduced by half every `halvingInterval` number of blocks, reflecting the scarcity and incentivizing early mining participation.
   - This feature emulates the economic model of deflationary assets and is pivotal for maintaining the long-term value of the blockchain's currency.
 - **Dynamic Reward Calculation**: The reward for mining new blocks now dynamically adjusts based on the total number of blocks mined in the blockchain, fostering a realistic mining environment.
