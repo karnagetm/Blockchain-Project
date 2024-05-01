@@ -1,4 +1,4 @@
-# Blockchain Personal Assignment Application
+# Blockchain Simulator Personal Assignment Application
 
 This repository houses an educational blockchain application that demonstrates the key components and functionalities of a distributed ledger system. The primary classes—`Block`, `Blockchain`, `Transaction`, and `Wallet`—collectively simulate the critical operations of a blockchain.
 
